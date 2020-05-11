@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 01</title>
+</head>
+<body>
+    <div id="containerList">
+
+    </div>
+    <button onclick="newSquare()"> *Square </button>
+    <div id="container">
+
+    </div>
+    <script>
+        function newSquare(){
+            var squaresArea = document.querySelector('#container');
+            var newBox = document.createElement('p');
+            newBox.style.width="100px";
+            newBox.style.height="100px";
+            newBox.style.backgroundColor='#f00';
+            newBox.onmouseover=function(){this.style.background=""+getRandomColor() +""}
+
+            squaresArea.appendChild(newBox);
+
+
+
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+            }
+            function montaLista(array) {
+                var listArray = document.querySelector('#containerList');
+                var lista = document.createElement('ul');
+
+                for (var i = 0; i < array.length; i++) {
+                    var item = document.createElement('li');
+
+                    item.appendChild(document.createTextNode(array[i]));
+
+                    lista.appendChild(item);
+                }
+  
+                 listArray.appendChild(lista);
+            }
+
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+            montaLista(nomes);
+
+
+
+    </script>
+</body>
+</html>
