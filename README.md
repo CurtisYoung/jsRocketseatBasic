@@ -9,7 +9,11 @@
  
 
 ## 💻 Desafios:
-
+<ul>
+ <li><a href="/assets/desafio1.pdf" target="_blank">Desafio Módulo 1<a></li> 
+ <li><a href="/assets/desafio2.pdf" target="_blank">Desafio Módulo 2<a></li> 
+ <li><a href="/assets/desafio3.pdf" target="_blank">Desafio Módulo 4<a></li>   
+</ul>
 
 
 ---------------------------------------------------------------------------------------
